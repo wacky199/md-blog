@@ -1,0 +1,27 @@
+.link {
+    color:#999999;
+    text-decoration: none;
+}
+
+.heading{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.heading div{
+    margin: 0;
+}
+.heading h1{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.heading ul{
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    // font-size: 1.1em;
+}
+.heading li{
+    margin:0 2%;
+}

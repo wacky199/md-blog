@@ -7,9 +7,7 @@ const AboutPage = () => {
       <h1>About Me</h1>
       <h3>
         Currently I'm an Electrical Undergrad student at
-        <a href="https://www.iiti.ac.in/" target="_blank">
-          {" "}
-          IIT Indore
+        <a href="https://www.iiti.ac.in/" target="_blank" style={{textDecoration:'none'}}> IIT Indore
         </a>
         . Who is interested in SDE work.
       </h3>
