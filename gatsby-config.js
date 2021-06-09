@@ -1,5 +1,11 @@
 module.exports = {
-  plugins: [
+
+  siteMetadata:{
+    title: `Wacky's Portfolio`,
+    author: `wacky`
+  },
+
+  plugins:[
     {
       resolve: `gatsby-source-filesystem`,
       options: {
