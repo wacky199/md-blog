@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 .link {
     color:#999999;
     text-decoration: none;
@@ -15,13 +17,28 @@
     padding:0;
     text-align: center;
     background-color: antiquewhite;
+    font-family:"raleway","sans-serif";
+    letter-spacing:2px;
+    text-transform: capitalize;
 }
-.heading ul{
-    display: flex;
-    list-style-type: none;
-    justify-content:flex-end;
-    // font-size: 1.1em;
-}
-.heading li{
-    margin:0 2%;
-}
+// .heading ul{
+//     display: flex;
+//     list-style-type: none;
+//     justify-content:flex-end;
+//     flex-wrap: wrap;
+// }
+// .heading li{
+//     margin:0 2%;
+// }
+// @media only screen and (max-width: 500px) {
+//     .heading ul{
+//     display: flex;
+//     list-style-type: none;
+//     flex-direction: column;
+//     align-items:center;
+//     // flex-wrap: nowrap;
+// }
+// .heading li{
+//     margin:0 1%;
+// }
+// }
