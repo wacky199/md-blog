@@ -6,6 +6,8 @@ featureImage: wall1.jpg
 except: Sint amet elit deserunt ipsum.run gatsby
 ---
 
+![wall](./wall1.jpg)
+
 I am trying to learn GATSBY, what I have covered till now,
 ### Module made
 1. Header

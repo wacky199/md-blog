@@ -5,6 +5,25 @@ module.exports = {
   },
 
   plugins: [
+
+    `gatsby-plugin-sass`,
+
+    // `gatsby-transformer-json`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `./src/data/`,
+    //   },
+    // },
+
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,15 +31,29 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
       },
-    },  
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
 
     // {
     //   resolve: `gatsby-source-filesystem`,

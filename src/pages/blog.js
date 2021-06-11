@@ -1,42 +1,55 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import * as blogStyles from './blog.module.scss'
 
 const BlogPage = () => {
+  // const data = useStaticQuery(graphql`
+  //   query myQuery {
+  //     allMarkdownRemark {
+  //       edges {
+  //         node {
+  //           fields {
+  //             slug
+  //           }
+  //           frontmatter {
+  //             date(formatString: "MMMM DD, YYYY")
+  //             title
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allContentfulWackyPortfolio(
+        sort: { fields: publishedDate, order: DESC }
+      ) {
         edges {
           node {
-            frontmatter {
-              title
-              date(formatString: "MMMM DD, YYYY")
-            }
+            title
+            slug
+            publishedDate(formatString: "MMMM Do, YYYY")
           }
         }
       }
     }
   `)
 
-  const dataList = data.allMarkdownRemark.edges
+  const dataList = data.allContentfulWackyPortfolio.edges
 
   return (
     <Layout>
-      <h1>My Blog</h1>
-      <p>
-        Magna esse velit ipsum exercitation. Et ex cupidatat incididunt veniam
-        dolor pariatur irure veniam est velit elit Lorem. Sit officia aliqua
-        enim anim et in. Commodo aute deserunt do anim. Id consectetur amet eu
-        dolore nisi ea qui. Eiusmod magna elit ad deserunt irure. Amet est
-        pariatur ipsum aliqua est veniam sint in. Pariatur veniam sunt ut non
-        laborum dolore. Veniam minim occaecat duis minim ut ipsum velit aliquip
-        ut culpa. Nulla eu occaecat qui fugiat.
-      </p>
-      <ol>
+      <h1>My Blogs</h1>
+      <ol className={blogStyles.posts}>
         {dataList.map(edge => (
-          <li>
-            <h3>{edge.node.frontmatter.title}</h3>
-            <p>{edge.node.frontmatter.date}</p>
+          <li className={blogStyles.post}>
+            <Link to={`/blog/${edge.node.slug}`}>
+              <h3>{edge.node.title}</h3>
+              <p>{edge.node.publishedDate}</p>
+            </Link>
           </li>
         ))}
       </ol>
