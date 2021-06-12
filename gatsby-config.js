@@ -16,8 +16,8 @@ module.exports = {
       options: {
         // spaceId:"y03g11vca4u3",
         // accessToken:"6fB_IrmE0AiSCinMbet-YPeFux6bncHOjQVROK_hPL0"
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
 

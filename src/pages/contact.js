@@ -10,7 +10,7 @@ const ContactPage=()=>{
         <h1>Contact</h1>
         <p>
           Hello there, if you like the work or have some suggestion, please
-          contact at, rel="noreferrer"
+          contact at, 
           <a
             className={contactStyle.link}
             rel="noreferrer"

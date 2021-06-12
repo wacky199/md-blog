@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"// import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types"
-import { renderRichText } from "gatsby-source-contentful/rich-text"// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { graphql } from "gatsby"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Head from "../components/head"
 
 export const query = graphql`
