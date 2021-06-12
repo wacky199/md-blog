@@ -103,7 +103,3 @@ module.exports = {
   ],
 }
 
-
-module.exports={
-  pathprefix:"/md-blog",
-}
