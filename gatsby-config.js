@@ -1,4 +1,6 @@
 module.exports = {
+
+
   siteMetadata: {
     title: `MD-Blog-GATSBYjs`,
     author: `wacky`,
@@ -99,4 +101,9 @@ module.exports = {
     //   },
     // },
   ],
+}
+
+
+module.exports={
+  pathprefix:"/md-blog"
 }
