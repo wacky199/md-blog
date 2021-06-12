@@ -1,0 +1,3 @@
+# md-blog
+### getting familiar with GATSBYjs
+This site have a Home page which links to all other pages, let it be Blogs (Each Blog also has it's own page), Contact, About...
