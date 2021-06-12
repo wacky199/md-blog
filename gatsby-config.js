@@ -105,5 +105,5 @@ module.exports = {
 
 
 module.exports={
-  pathprefix:"/md-blog"
+  pathprefix:"/md-blog",
 }
