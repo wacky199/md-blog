@@ -1,5 +1,5 @@
 {
-  "name": "md-blog-gatsby",
+  "name": "md-blog",
   "private": true,
   "description": "A simplified blog site developed using GATSBYjs to render .md files and others (CMS,..)",
   "version": "0.1.0",
