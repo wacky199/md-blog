@@ -1,20 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Wacky's Portfolio`,
+    title: `MD-Blog-GATSBYjs`,
     author: `wacky`,
   },
 
   plugins: [
 
     `gatsby-plugin-sass`,
-
-    // `gatsby-transformer-json`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `./src/data/`,
-    //   },
-    // },
 
     {
       resolve: `gatsby-source-contentful`,

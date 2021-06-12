@@ -7,10 +7,16 @@ const AboutPage = () => {
     <Layout>
       <h1>About Me</h1>
       <p>
-        Currently I'm an Electrical Undergrad student at
-        <a href="https://www.iiti.ac.in/" target="_blank" className={contactStyle.link}> IIT Indore
+        Hello, my name is Shivam, currently I'm an Undergrad student in
+        Electrical deptt. at{" "}
+        <a
+          href="https://www.iiti.ac.in/"
+          target="_blank"
+          className={contactStyle.link}
+        >
+          IIT Indore
         </a>
-        . Who is interested in SDE work.
+        . Apart from my electrical courses I'm really interested in Coding and SDE related works. Right now I'm trying to dive deep into REACT and related frameworks.
       </p>
     </Layout>
   )
