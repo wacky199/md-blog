@@ -6,28 +6,28 @@
 
 .post {
   margin: 1rem 0;
- 
   a {
-    background: hsla(70, 100%, 95%, 0.815);
-    color: #000;
+    background: hsla(0, 0%, 0%, 0.815);
+    color: rgb(255, 187, 187);
     display: block;
     padding: 0.15rem 1rem;
     text-decoration: none;
 
     h3 {
       margin-bottom: 0.5rem;
+      background-color: black;
     }
 
     p {
       margin-top: 0;
-      color:#777;
+      color:rgb(255, 251, 251);
       font-size: 0.8rem;
       font-style: italic;
     }
   }
 
-  a:hover {
-    background: #f5ffca;
+  h3:hover {
+    color: #ff7373;
   }
 }
 // .head{

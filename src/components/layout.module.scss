@@ -1,5 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+*{
+  background-color: rgb(0, 0, 0);
+}
+
 .container{
     margin:0 10%;
     padding: 1rem;
@@ -14,14 +18,28 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     p{
-        color:rgba(71, 71, 71, 0.904);
+        color:white;
     }
 
     h1{
-        color:rgb(48, 48, 48);
+        color:rgba(163, 255, 57, 0.733);
+    }
+
+    h2{
+        color:#ff9898;
+        margin-bottom: 0;
     }
 
     h4{
-        color:rgb(78, 78, 78);
+        color:rgba(255, 255, 255, 0.945);
+        font-style: italic;
+        
+    }
+
+    h5{
+        color:rgb(255, 246, 246);
+        font-style: italic;
+        margin-top: 0.4rem;
+        font-weight: 300;
     }
 }

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"// import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Head from "../components/head"
 
 export const query = graphql`
   query($slug: String!) {
@@ -41,8 +42,9 @@ const Blog = props => {
 
   return (
     <Layout>
+    <Head title={props.data.contentfulWackyPortfolio.title}/>
       <h2>{props.data.contentfulWackyPortfolio.title}</h2>
-      <p>{props.data.contentfulWackyPortfolio.publishedDate}</p>
+      <h5>{props.data.contentfulWackyPortfolio.publishedDate}</h5>
       {renderRichText(post,options)}
     </Layout>
   )
