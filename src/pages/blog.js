@@ -5,24 +5,7 @@ import * as blogStyles from './blog.module.scss'
 import Head from "../components/head"
 
 const BlogPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query myQuery {
-  //     allMarkdownRemark {
-  //       edges {
-  //         node {
-  //           fields {
-  //             slug
-  //           }
-  //           frontmatter {
-  //             date(formatString: "MMMM DD, YYYY")
-  //             title
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
+  
   const data = useStaticQuery(graphql`
     query {
       allContentfulWackyPortfolio(

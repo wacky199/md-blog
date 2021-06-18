@@ -15,7 +15,7 @@ export const query = graphql`
           ... on ContentfulAsset {
             __typename
             contentful_id
-            fixed(width: 560) {
+            fixed {
               width
               height
               src

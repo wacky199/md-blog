@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `MD-Blog-GATSBYjs`,
@@ -31,6 +33,7 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -40,7 +43,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 750,
+              maxWidth: 1080,
               linkImagesToOriginal: false,
             },
           },
@@ -50,4 +53,3 @@ module.exports = {
   ],
   pathPrefix: "/md-blog",
 }
-
