@@ -1,0 +1,28 @@
+.pagenotfound {
+  text-align: center;
+  h1 {
+    font-size: 1.6rem;
+    padding-top: 12vh;
+    background: -webkit-linear-gradient(
+      45deg,
+      rgb(255, 255, 255),
+      rgba(255, 0, 0, 0.911)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  a {
+      font-size: 1.1em;
+    text-decoration: none;
+    color:white;
+  }
+
+  &:hover{
+      a{font-size: 1.2em;
+          color:rgb(255, 213, 213);
+      }
+  }
+}
+
+

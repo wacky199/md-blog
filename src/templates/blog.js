@@ -44,7 +44,7 @@ const Blog = props => {
     <Layout>
     <Head title={props.data.contentfulWackyPortfolio.title}/>
       <h2>{props.data.contentfulWackyPortfolio.title}</h2>
-      <h5>{props.data.contentfulWackyPortfolio.publishedDate}</h5>
+      <p>{props.data.contentfulWackyPortfolio.publishedDate}</p>
       {renderRichText(post,options)}
     </Layout>
   )

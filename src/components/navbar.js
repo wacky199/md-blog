@@ -6,38 +6,31 @@ const NavBar = () => {
   return (
     <nav className={navbarStyles.navbar}>
       <ul>
-        <li>
-          <Link
-            to="/"
-            className={navbarStyles.navItem}
-            activeClassName={navbarStyles.navItemActive}
-          >
+        <li className={navbarStyles.navItem}>
+          <Link to="/" activeStyle={{ color: "#ffb2b2", fontSize: "1.2em" }}>
             Home
           </Link>
         </li>
-        <li>
+        <li className={navbarStyles.navItem}>
           <Link
             to="/blog"
-            className={navbarStyles.navItem}
-            activeClassName={navbarStyles.navItemActive}
+            activeStyle={{ color: "#ffb2b2", fontSize: "1.2em" }}
           >
             Blogs
           </Link>
         </li>
-        <li>
+        <li className={navbarStyles.navItem}>
           <Link
             to="/about"
-            className={navbarStyles.navItem}
-            activeClassName={navbarStyles.navItemActive}
+            activeStyle={{ color: "#ffb2b2", fontSize: "1.2em" }}
           >
             About me
           </Link>
         </li>
-        <li>
+        <li className={navbarStyles.navItem}>
           <Link
             to="/contact"
-            className={navbarStyles.navItem}
-            activeClassName={navbarStyles.navItemActive}
+            activeStyle={{ color: "#ffb2b2", fontSize: "1.2em" }}
           >
             Contact me
           </Link>

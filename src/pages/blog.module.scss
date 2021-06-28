@@ -1,36 +1,39 @@
 .posts {
+  text-align: justify;
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
 .post {
+  text-align: justify;
   margin: 1rem 0;
   a {
-    background: hsla(0, 0%, 0%, 0.815);
+    border-left: 1px solid rgba(255, 187, 187, 0.479);
     color: rgb(255, 187, 187);
     display: block;
-    padding: 0.15rem 1rem;
+    padding: 0.1rem 1rem;
     text-decoration: none;
 
     h3 {
+      margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       background-color: black;
     }
 
     p {
       margin-top: 0;
-      color:rgb(255, 251, 251);
+      color: rgb(255, 251, 251);
       font-size: 0.8rem;
       font-style: italic;
     }
   }
-
-  h3:hover {
+}
+.post:hover {
+  a {
+    border-left: 2px solid rgb(255, 187, 187);
+  }
+  h3 {
     color: #ff7373;
   }
 }
-// .head{
-//     margin:0;
-//     padding:0 1.1em;
-// }

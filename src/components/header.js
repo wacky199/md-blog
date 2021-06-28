@@ -15,12 +15,10 @@ const Header = () => {
   `)
 
   return (
-    <header className={headerStyles.heading}>
-      <div>
+      <div className={headerStyles.heading}>
         <h1>{data.site.siteMetadata.title}</h1>
         <NavBar />
       </div>
-    </header>
   )
 }
 export default Header

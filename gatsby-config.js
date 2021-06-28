@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `MD-Blog-GATSBYjs`,
+    title: `MD Blog GATSBYjs`,
     author: `wacky`,
   },
 
